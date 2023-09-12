@@ -10,7 +10,6 @@ include vendor/xiaomi/miuicamera/common/BoardConfigVendor.mk
 MIUICAMERA_PATH := vendor/xiaomi/miuicamera
 
 # Build Hacks
-BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_DUP_SYSPROP := true
 
 # Properties
