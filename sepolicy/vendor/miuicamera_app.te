@@ -13,3 +13,5 @@ allow miuicamera_app {
 }:service_manager find;
 
 dontaudit miuicamera_app radio_service:service_manager find;
+
+allow miuicamera_app privapp_data_file:file execute;
