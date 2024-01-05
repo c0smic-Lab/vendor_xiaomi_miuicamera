@@ -1,0 +1,15 @@
+type miuicamera_app, domain, coredomain;
+
+app_domain(miuicamera_app)
+net_domain(miuicamera_app)
+
+allow miuicamera_app {
+    app_api_service
+    audioserver_service
+    cameraserver_service
+    mediaextractor_service
+    mediametrics_service
+    mediaserver_service
+}:service_manager find;
+
+dontaudit miuicamera_app radio_service:service_manager find;
