@@ -1,0 +1,10 @@
+//
+// Copyright (C) 2024 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library {
+    name: "libgui_shim_miuicamera",
+    srcs: ["libgui_shim_miuicamera.c"],
+}

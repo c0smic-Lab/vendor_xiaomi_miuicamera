@@ -6,3 +6,7 @@
 
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/miuicamera/common/common-vendor.mk)
+
+# Shims
+PRODUCT_PACKAGES += \
+    libgui_shim_miuicamera
