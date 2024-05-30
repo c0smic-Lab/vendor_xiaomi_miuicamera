@@ -7,6 +7,10 @@
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/miuicamera/common/common-vendor.mk)
 
+# Dex
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    MiuiCamera
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
