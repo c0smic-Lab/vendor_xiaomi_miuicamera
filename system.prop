@@ -1,0 +1,11 @@
+# Framework allowlists
+persist.vendor.camera.privapp.list=com.android.camera
+vendor.camera.aux.packagelist=com.android.camera
+
+# Google Lens
+ro.com.google.lens.oem_camera_package=com.android.camera
+
+# MiuiCamera
+ro.miui.build.region=in
+ro.miui.notch=1
+ro.product.mod_device=_global
