@@ -30,6 +30,33 @@ android_app_import {
 	privileged: true,
 }
 
+prebuilt_etc_xml {
+	name: "vendor.xiaomi.hardware.misys@1.0",
+	owner: "xiaomi/miuicamera",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@1.0.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.xiaomi.hardware.misys@2.0",
+	owner: "xiaomi/miuicamera",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@2.0.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.xiaomi.hardware.misys@3.0",
+	owner: "xiaomi/miuicamera",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@3.0.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
 install_symlink {
 	name: "libcamera_algoup_jni.xiaomi_libcamera_algoup_jni.xiaomi_symlink64",
 	installed_location: "system/priv-app/MiuiCamera/lib/arm64/libcamera_algoup_jni.xiaomi.so",

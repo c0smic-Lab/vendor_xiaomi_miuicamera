@@ -1,5 +1,24 @@
 # All unpinned blobs below are extracted from V14.0.4.0.SJWMIXM (CURTANAGlobal)
 
+# MiSys
+vendor/bin/hw/vendor.xiaomi.hardware.misys@1.0-service
+vendor/bin/hw/vendor.xiaomi.hardware.misys@2.0-service
+vendor/bin/hw/vendor.xiaomi.hardware.misys@3.0-service
+vendor/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc
+vendor/etc/init/vendor.xiaomi.hardware.misys@2.0-service.rc
+vendor/etc/init/vendor.xiaomi.hardware.misys@3.0-service.rc
+vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@1.0.xml
+vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@2.0.xml
+vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@3.0.xml
+vendor/lib64/hw/vendor.xiaomi.hardware.misys@1.0-impl.so
+vendor/lib64/hw/vendor.xiaomi.hardware.misys@2.0-impl.so
+vendor/lib64/hw/vendor.xiaomi.hardware.misys@3.0-impl.so
+vendor/lib64/libcheckpid.so
+vendor/lib64/liblogwrap_vendor.so
+vendor/lib64/vendor.xiaomi.hardware.misys@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.misys@2.0.so
+vendor/lib64/vendor.xiaomi.hardware.misys@3.0.so
+
 # MiuiCamera
 system/lib64/libcamera_algoup_jni.xiaomi.so;SYMLINK=system/priv-app/MiuiCamera/lib/arm64/libcamera_algoup_jni.xiaomi.so
 system/lib64/libcamera_mianode_jni.xiaomi.so;SYMLINK=system/priv-app/MiuiCamera/lib/arm64/libcamera_mianode_jni.xiaomi.so
