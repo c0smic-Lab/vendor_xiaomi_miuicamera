@@ -30,3 +30,69 @@ android_app_import {
 	privileged: true,
 }
 
+install_symlink {
+	name: "libcamera_algoup_jni.xiaomi_libcamera_algoup_jni.xiaomi_symlink64",
+	installed_location: "system/priv-app/MiuiCamera/lib/arm64/libcamera_algoup_jni.xiaomi.so",
+	symlink_target: "/system/lib64/libcamera_algoup_jni.xiaomi.so",
+}
+
+install_symlink {
+	name: "libcamera_mianode_jni.xiaomi_libcamera_mianode_jni.xiaomi_symlink64",
+	installed_location: "system/priv-app/MiuiCamera/lib/arm64/libcamera_mianode_jni.xiaomi.so",
+	symlink_target: "/system/lib64/libcamera_mianode_jni.xiaomi.so",
+}
+
+install_symlink {
+	name: "libdoc_photo_libdoc_photo_symlink64",
+	installed_location: "system/priv-app/MiuiExtraPhoto/lib/arm64/libdoc_photo.so",
+	symlink_target: "/system/lib64/libdoc_photo.so",
+}
+
+install_symlink {
+	name: "libdoc_photo_c++_shared_libdoc_photo_c++_shared_symlink64",
+	installed_location: "system/priv-app/MiuiExtraPhoto/lib/arm64/libdoc_photo_c++_shared.so",
+	symlink_target: "/system/lib64/libdoc_photo_c++_shared.so",
+}
+
+install_symlink {
+	name: "libgallery_arcsoft_dualcam_refocus_libgallery_arcsoft_dualcam_refocus_symlink64",
+	installed_location: "system/priv-app/MiuiExtraPhoto/lib/arm64/libgallery_arcsoft_dualcam_refocus.so",
+	symlink_target: "/system/lib64/libgallery_arcsoft_dualcam_refocus.so",
+}
+
+install_symlink {
+	name: "libgallery_arcsoft_portrait_lighting_libgallery_arcsoft_portrait_lighting_symlink64",
+	installed_location: "system/priv-app/MiuiExtraPhoto/lib/arm64/libgallery_arcsoft_portrait_lighting.so",
+	symlink_target: "/system/lib64/libgallery_arcsoft_portrait_lighting.so",
+}
+
+install_symlink {
+	name: "libgallery_arcsoft_portrait_lighting_c_libgallery_arcsoft_portrait_lighting_c_symlink64",
+	installed_location: "system/priv-app/MiuiExtraPhoto/lib/arm64/libgallery_arcsoft_portrait_lighting_c.so",
+	symlink_target: "/system/lib64/libgallery_arcsoft_portrait_lighting_c.so",
+}
+
+install_symlink {
+	name: "libgallery_mpbase_libgallery_mpbase_symlink64",
+	installed_location: "system/priv-app/MiuiExtraPhoto/lib/arm64/libgallery_mpbase.so",
+	symlink_target: "/system/lib64/libgallery_mpbase.so",
+}
+
+install_symlink {
+	name: "libmibokeh_gallery_libmibokeh_gallery_symlink64",
+	installed_location: "system/priv-app/MiuiExtraPhoto/lib/arm64/libmibokeh_gallery.so",
+	symlink_target: "/system/lib64/libmibokeh_gallery.so",
+}
+
+install_symlink {
+	name: "librefocus_librefocus_symlink64",
+	installed_location: "system/priv-app/MiuiExtraPhoto/lib/arm64/librefocus.so",
+	symlink_target: "/system/lib64/librefocus.so",
+}
+
+install_symlink {
+	name: "librefocus_mibokeh_librefocus_mibokeh_symlink64",
+	installed_location: "system/priv-app/MiuiExtraPhoto/lib/arm64/librefocus_mibokeh.so",
+	symlink_target: "/system/lib64/librefocus_mibokeh.so",
+}
+

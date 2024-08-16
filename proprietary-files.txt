@@ -1,20 +1,20 @@
 # All unpinned blobs below are extracted from V14.0.4.0.SJWMIXM (CURTANAGlobal)
 
 # MiuiCamera
-system/lib64/libcamera_algoup_jni.xiaomi.so
-system/lib64/libcamera_mianode_jni.xiaomi.so
+system/lib64/libcamera_algoup_jni.xiaomi.so;SYMLINK=system/priv-app/MiuiCamera/lib/arm64/libcamera_algoup_jni.xiaomi.so
+system/lib64/libcamera_mianode_jni.xiaomi.so;SYMLINK=system/priv-app/MiuiCamera/lib/arm64/libcamera_mianode_jni.xiaomi.so
 system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=Aperture,Camera2,GoogleCamera,GoogleCameraGo
 
 # MiuiExtraPhoto
-system/lib64/libdoc_photo.so
-system/lib64/libdoc_photo_c++_shared.so
-system/lib64/libgallery_arcsoft_dualcam_refocus.so
-system/lib64/libgallery_arcsoft_portrait_lighting.so
-system/lib64/libgallery_arcsoft_portrait_lighting_c.so
-system/lib64/libgallery_mpbase.so
-system/lib64/libmibokeh_gallery.so
-system/lib64/librefocus.so
-system/lib64/librefocus_mibokeh.so
+system/lib64/libdoc_photo.so;SYMLINK=system/priv-app/MiuiExtraPhoto/lib/arm64/libdoc_photo.so
+system/lib64/libdoc_photo_c++_shared.so;SYMLINK=system/priv-app/MiuiExtraPhoto/lib/arm64/libdoc_photo_c++_shared.so
+system/lib64/libgallery_arcsoft_dualcam_refocus.so;SYMLINK=system/priv-app/MiuiExtraPhoto/lib/arm64/libgallery_arcsoft_dualcam_refocus.so
+system/lib64/libgallery_arcsoft_portrait_lighting.so;SYMLINK=system/priv-app/MiuiExtraPhoto/lib/arm64/libgallery_arcsoft_portrait_lighting.so
+system/lib64/libgallery_arcsoft_portrait_lighting_c.so;SYMLINK=system/priv-app/MiuiExtraPhoto/lib/arm64/libgallery_arcsoft_portrait_lighting_c.so
+system/lib64/libgallery_mpbase.so;SYMLINK=system/priv-app/MiuiExtraPhoto/lib/arm64/libgallery_mpbase.so
+system/lib64/libmibokeh_gallery.so;SYMLINK=system/priv-app/MiuiExtraPhoto/lib/arm64/libmibokeh_gallery.so
+system/lib64/librefocus.so;SYMLINK=system/priv-app/MiuiExtraPhoto/lib/arm64/librefocus.so
+system/lib64/librefocus_mibokeh.so;SYMLINK=system/priv-app/MiuiExtraPhoto/lib/arm64/librefocus_mibokeh.so
 system/priv-app/MiuiExtraPhoto/MiuiExtraPhoto.apk
 
 # Public Libararies

@@ -22,3 +22,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     MiuiCamera \
     MiuiExtraPhoto
+
+PRODUCT_PACKAGES += \
+    libcamera_algoup_jni.xiaomi_libcamera_algoup_jni.xiaomi_symlink64 \
+    libcamera_mianode_jni.xiaomi_libcamera_mianode_jni.xiaomi_symlink64 \
+    libdoc_photo_libdoc_photo_symlink64 \
+    libdoc_photo_c++_shared_libdoc_photo_c++_shared_symlink64 \
+    libgallery_arcsoft_dualcam_refocus_libgallery_arcsoft_dualcam_refocus_symlink64 \
+    libgallery_arcsoft_portrait_lighting_libgallery_arcsoft_portrait_lighting_symlink64 \
+    libgallery_arcsoft_portrait_lighting_c_libgallery_arcsoft_portrait_lighting_c_symlink64 \
+    libgallery_mpbase_libgallery_mpbase_symlink64 \
+    libmibokeh_gallery_libmibokeh_gallery_symlink64 \
+    librefocus_librefocus_symlink64 \
+    librefocus_mibokeh_librefocus_mibokeh_symlink64
