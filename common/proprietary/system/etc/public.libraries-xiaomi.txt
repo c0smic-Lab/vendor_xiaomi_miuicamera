@@ -1,0 +1,3 @@
+libcamera_algoup_jni.xiaomi.so
+libcamera_mianode_jni.xiaomi.so
+
