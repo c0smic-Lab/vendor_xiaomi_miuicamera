@@ -11,13 +11,6 @@ $(call inherit-product, vendor/xiaomi/miuicamera/common/common-vendor.mk)
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     MiuiCamera
 
-# HIDL
-PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
-    android.hidl.base@1.0.vendor \
-    android.hidl.memory.block@1.0 \
-    android.hidl.memory.block@1.0.vendor
-
 # Priv-app permission
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-miui.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miui.xml
