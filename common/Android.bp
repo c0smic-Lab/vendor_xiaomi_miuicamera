@@ -7,6 +7,321 @@ soong_namespace {
 	],
 }
 
+cc_prebuilt_library_shared {
+	name: "libcamera_algoup_jni.xiaomi",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libcamera_algoup_jni.xiaomi.so"],
+			shared_libs: ["libgui_shim_miuicamera", "libvndksupport", "libcamera_client", "libcamera_metadata", "libgui", "libbinder", "libutils", "libcutils", "liblog", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libcamera_mianode_jni.xiaomi",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libcamera_mianode_jni.xiaomi.so"],
+			shared_libs: ["libgui_shim_miuicamera", "libvndksupport", "libcamera_client", "libcamera_metadata", "libgui", "libbinder", "libutils", "libcutils", "liblog", "libxml2", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libdoc_photo",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libdoc_photo.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libdoc_photo_c++_shared",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libdoc_photo_c++_shared.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libgallery_arcsoft_dualcam_refocus",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libgallery_arcsoft_dualcam_refocus.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libgallery_arcsoft_portrait_lighting",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libgallery_arcsoft_portrait_lighting.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libgallery_arcsoft_portrait_lighting_c",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libgallery_arcsoft_portrait_lighting_c.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libgallery_mpbase",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libgallery_mpbase.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmibokeh_gallery",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libmibokeh_gallery.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "librefocus",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/librefocus.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "librefocus_mibokeh",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/librefocus_mibokeh.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.xiaomi.hardware.misys@1.0-impl",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.misys@1.0-impl.so"],
+			shared_libs: ["libhidlbase", "libutils", "liblog", "vendor.xiaomi.hardware.misys@1.0", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.xiaomi.hardware.misys@2.0-impl",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.misys@2.0-impl.so"],
+			shared_libs: ["libhidlbase", "libutils", "liblog", "vendor.xiaomi.hardware.misys@1.0", "vendor.xiaomi.hardware.misys@2.0", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.xiaomi.hardware.misys@3.0-impl",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.misys@3.0-impl.so"],
+			shared_libs: ["libhidlbase", "libcutils", "libutils", "liblog", "libcheckpid", "liblogwrap_vendor", "libhidlmemory", "vendor.xiaomi.hardware.misys@3.0", "android.hidl.memory@1.0", "android.hidl.allocator@1.0", "vendor.xiaomi.hardware.misys@1.0", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libcheckpid",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libcheckpid.so"],
+			shared_libs: ["libhidlbase", "libcutils", "libutils", "liblog", "liblogwrap_vendor", "vendor.xiaomi.hardware.misys@1.0", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "liblogwrap_vendor",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/liblogwrap_vendor.so"],
+			shared_libs: ["libcutils", "liblog", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.xiaomi.hardware.misys@1.0",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.xiaomi.hardware.misys@1.0.so"],
+			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.xiaomi.hardware.misys@2.0",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.xiaomi.hardware.misys@2.0.so"],
+			shared_libs: ["vendor.xiaomi.hardware.misys@1.0", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.xiaomi.hardware.misys@3.0",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.xiaomi.hardware.misys@3.0.so"],
+			shared_libs: ["android.hidl.allocator@1.0", "android.hidl.memory.block@1.0", "android.hidl.memory.token@1.0", "vendor.xiaomi.hardware.misys@1.0", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
 android_app_import {
 	name: "MiuiCamera",
 	owner: "xiaomi/miuicamera",
@@ -31,7 +346,7 @@ android_app_import {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.xiaomi.hardware.misys@1.0",
+	name: "vendor.xiaomi.hardware.misys@1.0.xml",
 	owner: "xiaomi/miuicamera",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@1.0.xml",
 	filename_from_src: true,
@@ -40,7 +355,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.xiaomi.hardware.misys@2.0",
+	name: "vendor.xiaomi.hardware.misys@2.0.xml",
 	owner: "xiaomi/miuicamera",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@2.0.xml",
 	filename_from_src: true,
@@ -49,11 +364,65 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.xiaomi.hardware.misys@3.0",
+	name: "vendor.xiaomi.hardware.misys@3.0.xml",
 	owner: "xiaomi/miuicamera",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@3.0.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "vendor.xiaomi.hardware.misys@1.0-service",
+	owner: "xiaomi/miuicamera",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/hw/vendor.xiaomi.hardware.misys@1.0-service"],
+			shared_libs: ["liblog", "libcutils", "libbase", "libutils", "libhardware", "libhidlbase", "vendor.xiaomi.hardware.misys@1.0", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "vendor.xiaomi.hardware.misys@2.0-service",
+	owner: "xiaomi/miuicamera",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/hw/vendor.xiaomi.hardware.misys@2.0-service"],
+			shared_libs: ["liblog", "libcutils", "libbase", "libutils", "libhardware", "libhidlbase", "vendor.xiaomi.hardware.misys@1.0", "vendor.xiaomi.hardware.misys@2.0", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "vendor.xiaomi.hardware.misys@3.0-service",
+	owner: "xiaomi/miuicamera",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/hw/vendor.xiaomi.hardware.misys@3.0-service"],
+			shared_libs: ["liblog", "liblogwrap_vendor", "libcheckpid", "libbase", "libutils", "libcutils", "libhardware", "libhidlbase", "libhidlmemory", "android.hidl.memory@1.0", "android.hidl.allocator@1.0", "vendor.xiaomi.hardware.misys@1.0", "vendor.xiaomi.hardware.misys@2.0", "vendor.xiaomi.hardware.misys@3.0", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
