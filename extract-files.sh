@@ -58,6 +58,30 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --add-needed "libgui_shim_miuicamera.so" "${2}"
             ;;
+        system/lib64/libdoc_photo.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF_0_17_2}" --set-soname libdoc_photo.so "${2}"
+            ;;
+        system/lib64/libdoc_photo_c++_shared.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF_0_17_2}" --set-soname libdoc_photo_c++_shared.so "${2}"
+            ;;
+        system/lib64/libgallery_arcsoft_dualcam_refocus.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF_0_17_2}" --set-soname libgallery_arcsoft_dualcam_refocus.so "${2}"
+            ;;
+        system/lib64/libgallery_arcsoft_portrait_lighting.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF_0_17_2}" --set-soname libgallery_arcsoft_portrait_lighting.so "${2}"
+            ;;
+        system/lib64/libgallery_arcsoft_portrait_lighting_c.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF_0_17_2}" --set-soname libgallery_arcsoft_portrait_lighting_c.so "${2}"
+            ;;
+        system/lib64/libgallery_mpbase.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF_0_17_2}" --set-soname libgallery_mpbase.so "${2}"
+            ;;
         system/priv-app/MiuiCamera/MiuiCamera.apk)
             [ "$2" = "" ] && return 0
             split --bytes=49M -d "$2" "$2".part
