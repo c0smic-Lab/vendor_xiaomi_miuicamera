@@ -4,7 +4,127 @@
 
 soong_namespace {
 	imports: [
+		"vendor/xiaomi/miuicamera",
 	],
+}
+
+cc_prebuilt_library_shared {
+	name: "libOpenCL_system",
+	stem: "libOpenCL",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libOpenCL.so"],
+			shared_libs: ["libcutils", "libvndksupport", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libarcsoft_dualcam_refocus_system",
+	stem: "libarcsoft_dualcam_refocus",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libarcsoft_dualcam_refocus.so"],
+			shared_libs: ["libarcsoft_dualcam_refocus_rear_t_system", "libarcsoft_dualcam_refocus_rear_w_system", "libarcsoft_dualcam_refocus_front_system", "libmpbase_system", "liblog", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libarcsoft_dualcam_refocus_front_system",
+	stem: "libarcsoft_dualcam_refocus_front",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libarcsoft_dualcam_refocus_front.so"],
+			shared_libs: ["libmpbase_system", "libOpenCL_system", "liblog", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libarcsoft_dualcam_refocus_rear_t_system",
+	stem: "libarcsoft_dualcam_refocus_rear_t",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libarcsoft_dualcam_refocus_rear_t.so"],
+			shared_libs: ["libmpbase_system", "libOpenCL_system", "liblog", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libarcsoft_dualcam_refocus_rear_w_system",
+	stem: "libarcsoft_dualcam_refocus_rear_w",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libarcsoft_dualcam_refocus_rear_w.so"],
+			shared_libs: ["libmpbase_system", "libOpenCL_system", "liblog", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libarcsoft_portrait_lighting_system",
+	stem: "libarcsoft_portrait_lighting",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libarcsoft_portrait_lighting.so"],
+			shared_libs: ["libmpbase_system", "libarcsoft_portrait_lighting_c_system", "liblog", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libarcsoft_portrait_lighting_c_system",
+	stem: "libarcsoft_portrait_lighting_c",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libarcsoft_portrait_lighting_c.so"],
+			shared_libs: ["libOpenCL_system", "liblog", "libdl", "libc", "libm", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
 }
 
 cc_prebuilt_library_shared {
@@ -48,7 +168,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system/lib64/libdoc_photo.so"],
-			shared_libs: ["liblog", "libOpenCL", "libjnigraphics", "libc", "libz", "libdl", "libm", ],
+			shared_libs: ["liblog", "libOpenCL_system", "libjnigraphics", "libc", "libz", "libdl", "libm", ],
 		},
 	},
 	compile_multilib: "64",
@@ -80,7 +200,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system/lib64/libgallery_arcsoft_dualcam_refocus.so"],
-			shared_libs: ["libmpbase", "liblog", "libc", "libm", "libdl", ],
+			shared_libs: ["libmpbase_system", "liblog", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -96,7 +216,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system/lib64/libgallery_arcsoft_portrait_lighting.so"],
-			shared_libs: ["libmpbase", "libarcsoft_portrait_lighting_c", "liblog", "libc", "libm", "libdl", ],
+			shared_libs: ["libmpbase_system", "libarcsoft_portrait_lighting_c_system", "liblog", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -112,7 +232,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system/lib64/libgallery_arcsoft_portrait_lighting_c.so"],
-			shared_libs: ["libOpenCL", "liblog", "libdl", "libc", "libm", ],
+			shared_libs: ["libOpenCL_system", "liblog", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "64",
@@ -144,7 +264,24 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system/lib64/libmibokeh_gallery.so"],
-			shared_libs: ["libOpenCL", "liblog", "libz", "libm", "libdl", "libc", ],
+			shared_libs: ["libOpenCL_system", "liblog", "libz", "libm", "libdl", "libc", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmpbase_system",
+	stem: "libmpbase",
+	owner: "xiaomi/miuicamera",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libmpbase.so"],
+			shared_libs: ["libc", ],
 		},
 	},
 	compile_multilib: "64",

@@ -1,5 +1,15 @@
 # All unpinned blobs below are extracted from V14.0.4.0.SJWMIXM (CURTANAGlobal)
 
+# Dependencies
+vendor/lib64/libmpbase.so:system/lib64/libmpbase.so;MODULE_SUFFIX=_system
+vendor/lib64/libOpenCL.so:system/lib64/libOpenCL.so;MODULE_SUFFIX=_system
+vendor/lib64/libarcsoft_dualcam_refocus.so:system/lib64/libarcsoft_dualcam_refocus.so;MODULE_SUFFIX=_system
+vendor/lib64/libarcsoft_dualcam_refocus_front.so:system/lib64/libarcsoft_dualcam_refocus_front.so;MODULE_SUFFIX=_system
+vendor/lib64/libarcsoft_dualcam_refocus_rear_t.so:system/lib64/libarcsoft_dualcam_refocus_rear_t.so;MODULE_SUFFIX=_system
+vendor/lib64/libarcsoft_dualcam_refocus_rear_w.so:system/lib64/libarcsoft_dualcam_refocus_rear_w.so;MODULE_SUFFIX=_system
+vendor/lib64/libarcsoft_portrait_lighting.so:system/lib64/libarcsoft_portrait_lighting.so;MODULE_SUFFIX=_system
+vendor/lib64/libarcsoft_portrait_lighting_c.so:system/lib64/libarcsoft_portrait_lighting_c.so;MODULE_SUFFIX=_system
+
 # MiSys
 vendor/bin/hw/vendor.xiaomi.hardware.misys@1.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.misys@2.0-service

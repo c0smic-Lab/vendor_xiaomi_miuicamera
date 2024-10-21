@@ -23,6 +23,39 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
+function vendor_imports() {
+    cat << EOF >> "$1"
+		"vendor/xiaomi/miuicamera",
+EOF
+}
+
+function lib_to_package_fixup_system_variants() {
+    if [ "$2" != "system" ]; then
+        return 1
+    fi
+    case "$1" in
+        libmpbase | \
+            libOpenCL | \
+            libarcsoft_dualcam_refocus | \
+            libarcsoft_dualcam_refocus_front | \
+            libarcsoft_dualcam_refocus_rear_t | \
+            libarcsoft_dualcam_refocus_rear_w | \
+            libarcsoft_portrait_lighting | \
+            libarcsoft_portrait_lighting_c)
+            echo "$1_system"
+            ;;
+        *)
+            return 1
+            ;;
+    esac
+}
+
+function lib_to_package_fixup() {
+    lib_to_package_fixup_clang_rt_ubsan_standalone "$1" ||
+        lib_to_package_fixup_proto_3_9_1 "$1" ||
+        lib_to_package_fixup_system_variants "$@"
+}
+
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" true
 

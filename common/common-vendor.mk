@@ -12,6 +12,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miuicamera/common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@3.0-service.rc
 
 PRODUCT_PACKAGES += \
+    libOpenCL_system \
+    libarcsoft_dualcam_refocus_system \
+    libarcsoft_dualcam_refocus_front_system \
+    libarcsoft_dualcam_refocus_rear_t_system \
+    libarcsoft_dualcam_refocus_rear_w_system \
+    libarcsoft_portrait_lighting_system \
+    libarcsoft_portrait_lighting_c_system \
     libcamera_algoup_jni.xiaomi \
     libcamera_mianode_jni.xiaomi \
     libdoc_photo \
@@ -21,6 +28,7 @@ PRODUCT_PACKAGES += \
     libgallery_arcsoft_portrait_lighting_c \
     libgallery_mpbase \
     libmibokeh_gallery \
+    libmpbase_system \
     librefocus \
     librefocus_mibokeh \
     vendor.xiaomi.hardware.misys@1.0-impl \
